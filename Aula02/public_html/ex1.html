@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 01</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <a href="http://www.ifg.edu.br">
+        </a>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td><a href="mailto:joao@gmail.com">joao@gmail.com</a></td>
+                    <td>(62) 5555-4444</td>
+                    <td>Rua 85, n. 543 - Setor Marista</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td><a href="mailto:joao@gmail.com">pedro@gmail.com</a></td>
+                    <td>(62) 3333-4444</td>
+                    <td>Rua 90, n. 543 - Setor Marista</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <img src="http://www.ifg.edu.br/intranet/images/2015/Arquivos/completa%20cor.jpg" alt="Logo IFG" width="600" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <form action="index.html" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" 
+                   name="email" placeholder="seu@email.com" />
+            <br/>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha"/>
+            <br/>
+            <label for="genero">Genero:</label>
+            <select id="genero" name="genero">
+                <option value="M">Masculino</option>                
+                <option value="F">Feminino</option>                
+            </select>
+            <br/>
+            <label>Etnia:</label>
+            <input type="radio" id="etnia_branco" name="etnia" value="branco" />
+            <label for="etnia_branco">Branco</label>
+            <input type="radio" id="etnia_pardo" name="etnia" value="pardo" />
+            <label for="etnia_pardo">Pardo</label>
+            <input type="radio" id="etnia_negro" name="etnia" value="negro" />
+            <label for="etnia_negro">Negro</label>
+            <br/>
+            <label for="carro">Carro:</label>
+            <input list="carros" name="carro" id="carro"/>
+            <datalist id="carros">
+                <option>Palio</option>
+                <option>Gol</option>
+                <option>Celta</option>
+                <option>Sandero</option>
+            </datalist>
+            <br/>
+            <label>Disciplinas:</label><br/>
+            <input type="checkbox" name="disciplinas[]" id="disciplina1"/>
+            <label for="disciplina1">Matemática</label><br/>
+            <input type="checkbox" name="disciplinas[]" id="disciplina2"/>
+            <label for="disciplina2">Português</label><br/>
+            <input type="checkbox" name="disciplinas[]" id="disciplina3"/>
+            <label for="disciplina3">Física</label><br/>
+            
+            <input type="file" id="arquivo" name="arquivo" />
+            <br/>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" 
+                   min="18" max="60" />
+            <br/>
+            <label for="data_nasc">Data de Nascimento:</label>
+            <input type="month" id="data_nasc" name="data_nasc" />
+            <br/>
+            <label for="cor">Cor:</label>
+            <input type="color" id="cor" name="cor" />
+            <br/>
+            <label for="salario">Salário:</label>
+            <input type="range" id="salario" name="salario" min="780" max="24000" />
+            <br/>
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" />
+            <br/>
+            <input type="button" value="Enviar" />
+            <button>Cancelar</button>
+            
+            <input type="reset" value="Limpar" />
+            
+            <input type="submit" value="Submeter" />
+        </form>
+    </body>
+</html>

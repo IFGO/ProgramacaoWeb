@@ -1,0 +1,43 @@
+#principal {
+    height: 500px;
+    width: 606px;
+    border: solid 10px green;
+    margin: 0 auto;
+    text-align: justify;
+}
+body {
+    background: #eee;
+    text-align: center;
+}
+.texto {
+    font-family: Arial;
+    font-size: 12px;
+    width: 180px;
+    height: 80px;
+    border: solid 1px;
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+.texto a {
+    text-decoration: none;
+    color: #7af;
+}
+.texto a:hover {
+    text-decoration: none;
+    color: #06d;
+    font-weight: bold;
+}
+body .texto:first-child {
+    color: #06d;
+    font-weight: bold;
+}
+#popup {
+    border: solid 1px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    background: green;
+}

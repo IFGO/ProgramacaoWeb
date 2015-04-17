@@ -30,8 +30,27 @@
                 padding: 10px; text-align: right; color: #484;
                 text-shadow: 1px 1px #eee; }
         </style>
+        <script type="text/javascript">
+            var a = 10;
+            b = 12;
+            
+            function iniciar() {
+                document.getElementsByTagName("li")[2].onclick = hello;
+            }
+            
+            
+            function hello() {
+                var c = 30;
+                alert("A função hello foi chamada");
+                alert(c);
+            }
+            function mudaTitulo() {
+                var elementoTitulo = document.getElementById("titulo");
+                elementoTitulo.innerHTML = "Aprendendo HTML, CSS e Javascript";
+            }
+        </script>
     </head>
-    <body>
+    <body onload="iniciar();">
         <div class="principal">
             <div class="header">
                 <div id="logo">
@@ -42,7 +61,7 @@
                     <ul>
                         <li><a href="http://google.com.br">Principal</a></li>
                         <li><a href="http://google.com.br">HTML</a></li>
-                        <li><a href="http://google.com.br">CSS</a></li>
+                        <li><a href="#">CSS</a></li>
                         <li><a href="http://google.com.br">Javascript</a></li>
                         <li><a href="http://google.com.br">PHP</a></li>
                         <li><a href="http://google.com.br">Java</a></li>
@@ -51,7 +70,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#">Introdução</a></li>
+                    <li><a href="#" onmouseover="hello();" onclick="mudaTitulo();">Introdução</a></li>
                     <li><a href="#">Tópicos Iniciais</a></li>
                     <li><a href="#">Tópicos Avançados</a></li>
                     <li><a href="#">Exercícios</a></li>
@@ -59,6 +78,9 @@
                 </ul>
             </div>
             <div class="conteudo"><h1>Introdução ao HTML</h1>
+                
+                <input type="text" onchange="alert('O valor foi modificado!');" />
+                
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non varius justo. Aenean ornare, magna in sollicitudin imperdiet, nibh lorem molestie dolor, ut tincidunt tellus lectus at dolor. Quisque vitae varius eros. Aliquam erat volutpat. Aliquam erat volutpat. Nulla at semper nibh, interdum scelerisque nunc. Nulla vel vestibulum urna, eget cursus massa.
                 </p>
                 <p>Mauris id auctor tellus, molestie maximus leo. Nunc sed quam metus. Vivamus quis imperdiet urna. Maecenas a congue nisi, sit amet hendrerit turpis. Mauris blandit dolor velit, sit amet hendrerit ante fringilla nec. In hac habitasse platea dictumst. Donec tincidunt, libero eu pharetra accumsan, est ipsum suscipit tellus, et pharetra mi lorem egestas felis. Sed ullamcorper nisi in tincidunt tristique. Donec malesuada id tortor vitae cursus. Etiam cursus augue leo, ac interdum libero vestibulum quis. In hac habitasse platea dictumst. Cras malesuada, felis et molestie rutrum, ex magna luctus felis, eget molestie purus sem ut ante.

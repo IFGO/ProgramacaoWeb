@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function ajax(callback) {
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.onreadystatechange = function() {
+                    if(xmlHttp.readyState == 4) {
+                      if(xmlHttp.status == 200) {
+                        eval("texto = "+xmlHttp.responseText);
+                        callback();
+                      } else if(xmlHttp.status == 404) {
+                        document.getElementById("conteudo").innerHTML = 
+                                "<h1>Arquivo não encontrado</h1>";
+                      }
+                    }
+                };
+                xmlHttp.open("GET", "texto.txt", true);
+                xmlHttp.send();
+            }
+            function requisitarTexto() {
+                ajax(function() {
+                  alert(texto);
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="requisitarTexto();" value="Enviar" />
+        <div id="conteudo"></div>
+    </body>
+</html>
+
+

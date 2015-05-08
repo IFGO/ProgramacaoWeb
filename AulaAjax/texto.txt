@@ -1,0 +1,1 @@
+Um texto que será requisitado pelo XMLHttpRequest

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
+    <?php include 'metadados.php'; ?>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <?php include 'cabecalho.php'; ?>
+        <div class="conteudo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ligula nunc, elementum non malesuada eu, efficitur ac dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sem justo, gravida in ex sit amet, feugiat pellentesque mauris. Curabitur egestas magna nunc, id faucibus sapien semper eget. Proin quis enim vel libero feugiat posuere eu vitae massa. Fusce tempus mauris quis ipsum interdum viverra. Maecenas viverra purus at dui consequat consequat. Fusce porttitor diam velit, eget dictum nisl pulvinar commodo. Cras sed ornare nibh. Quisque semper lorem turpis, quis accumsan nulla rutrum quis. Suspendisse potenti.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ligula nunc, elementum non malesuada eu, efficitur ac dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sem justo, gravida in ex sit amet, feugiat pellentesque mauris. Curabitur egestas magna nunc, id faucibus sapien semper eget. Proin quis enim vel libero feugiat posuere eu vitae massa. Fusce tempus mauris quis ipsum interdum viverra. Maecenas viverra purus at dui consequat consequat. Fusce porttitor diam velit, eget dictum nisl pulvinar commodo. Cras sed ornare nibh. Quisque semper lorem turpis, quis accumsan nulla rutrum quis. Suspendisse potenti.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ligula nunc, elementum non malesuada eu, efficitur ac dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sem justo, gravida in ex sit amet, feugiat pellentesque mauris. Curabitur egestas magna nunc, id faucibus sapien semper eget. Proin quis enim vel libero feugiat posuere eu vitae massa. Fusce tempus mauris quis ipsum interdum viverra. Maecenas viverra purus at dui consequat consequat. Fusce porttitor diam velit, eget dictum nisl pulvinar commodo. Cras sed ornare nibh. Quisque semper lorem turpis, quis accumsan nulla rutrum quis. Suspendisse potenti.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ligula nunc, elementum non malesuada eu, efficitur ac dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sem justo, gravida in ex sit amet, feugiat pellentesque mauris. Curabitur egestas magna nunc, id faucibus sapien semper eget. Proin quis enim vel libero feugiat posuere eu vitae massa. Fusce tempus mauris quis ipsum interdum viverra. Maecenas viverra purus at dui consequat consequat. Fusce porttitor diam velit, eget dictum nisl pulvinar commodo. Cras sed ornare nibh. Quisque semper lorem turpis, quis accumsan nulla rutrum quis. Suspendisse potenti.</p>
+        </div>
+        <?php include 'rodape.php'; ?>
     </body>
 </html>
